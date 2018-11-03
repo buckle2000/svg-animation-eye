@@ -1,0 +1,27 @@
+:root
+  font-family 'Noto Sans CJK TC'
+.container
+  display flex
+  align-items center
+  justify-content center
+  height 100vh
+  font-size 60pt
+
+// Animation: Rotating pupil
+@keyframes rotate
+  pupil-offset = 40px
+  0%, 100%
+    transform translate(pupil-offset, 0)
+  25%
+    transform translate(0, - pupil-offset)
+  50%
+    transform translate(- pupil-offset, 0)
+  75%
+    transform translate(0, pupil-offset)
+
+svg
+  outline solid
+  width 3em
+  height @width
+  &:not(:hover) #pupil
+    animation rotate 2s infinite steps(2)

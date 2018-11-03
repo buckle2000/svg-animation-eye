@@ -1,0 +1,74 @@
+:root {
+  font-family: 'Noto Sans CJK TC';
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 60pt;
+}
+svg {
+  outline: solid;
+  width: 3em;
+  height: 3em;
+}
+svg:not(:hover) #pupil {
+  animation: rotate 2s infinite steps(2);
+}
+@-moz-keyframes rotate {
+  0%, 100% {
+    transform: translate(40px, 0);
+  }
+  25% {
+    transform: translate(0, -40px);
+  }
+  50% {
+    transform: translate(-40px, 0);
+  }
+  75% {
+    transform: translate(0, 40px);
+  }
+}
+@-webkit-keyframes rotate {
+  0%, 100% {
+    transform: translate(40px, 0);
+  }
+  25% {
+    transform: translate(0, -40px);
+  }
+  50% {
+    transform: translate(-40px, 0);
+  }
+  75% {
+    transform: translate(0, 40px);
+  }
+}
+@-o-keyframes rotate {
+  0%, 100% {
+    transform: translate(40px, 0);
+  }
+  25% {
+    transform: translate(0, -40px);
+  }
+  50% {
+    transform: translate(-40px, 0);
+  }
+  75% {
+    transform: translate(0, 40px);
+  }
+}
+@keyframes rotate {
+  0%, 100% {
+    transform: translate(40px, 0);
+  }
+  25% {
+    transform: translate(0, -40px);
+  }
+  50% {
+    transform: translate(-40px, 0);
+  }
+  75% {
+    transform: translate(0, 40px);
+  }
+}

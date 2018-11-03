@@ -1,0 +1,2 @@
+rm dist -rf
+parcel build --public-url . --no-minify index.pug
